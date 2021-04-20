@@ -14,7 +14,7 @@ def data_gen(t=1):
     while cnt < len(cases)-2:
         cnt += 1
         t += 1
-        yield t,cases[t]
+        yield t,cases[t] # replace cases[t] with cases[t] - cases[t-1] for daily raise case
 def init():
     ax.set_ylim(0,10)
     ax.set_xlim(0,10)
